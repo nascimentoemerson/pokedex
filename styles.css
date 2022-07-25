@@ -41,7 +41,7 @@ input:focus{
     outline: none;
 }
 
-button{
+#btn{
     cursor: pointer;
     background-color:#880868;
     margin-top: 25px;
@@ -158,6 +158,12 @@ button{
 
 #poke-name::first-letter{
     text-transform: uppercase;
+}
+
+.End{
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 999px){
