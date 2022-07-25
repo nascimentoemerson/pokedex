@@ -43,8 +43,19 @@ input:focus{
 
 button{
     cursor: pointer;
-    
+    background-color:#880868;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 11px;
+    color:#fff
 }
+
+#btn:hover{
+    background-color: #0f030c;
+    color: chartreuse;
+}
+
+
 
 .poke-container{
     display: flex;
@@ -176,5 +187,7 @@ button{
         color: chartreuse;
     }
 }
+
+
 
 
