@@ -50,6 +50,10 @@ input:focus{
     color:#fff
 }
 
+button{
+    cursor: pointer;
+}
+
 #btn:hover{
     background-color: #0f030c;
     color: chartreuse;
