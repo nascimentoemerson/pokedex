@@ -43,6 +43,7 @@ input:focus{
 
 button{
     cursor: pointer;
+    
 }
 
 .poke-container{
@@ -148,6 +149,32 @@ button{
     text-transform: uppercase;
 }
 
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
 
+    body h1{
+        font-size: 2.5rem;
+    }
+
+    
+    #btn{
+        background-color:#880868;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-radius: 11px;
+        color:#fff
+    }
+
+    #busca-pokemon{
+        width: 50%;
+    }
+
+    #btn:hover{
+        background-color: #0f030c;
+        color: chartreuse;
+    }
+}
 
 
