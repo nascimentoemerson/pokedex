@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pokedex/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+    <h1>Pokedex</h1>
+    
+    <form class="busca-pokemon">
+        <input type="text" name="entrada-pokemon" id="entrada-pokemon">
+        <button class="btn-busca"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <div class="poke-container">
+          
+    </div>
+
+    <section id="modal-overlay">
+        <div id="modal" class="modal-item">
+            <span id="close-modal">x</span>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="poke image" class="modal-item" id="modal-image">
+            <div>
+                <h4 class="modal-item" id="poke-name" >Bulbasaur</h4>
+                <p class="modal-item" id="poke-id">ID: #001</p>
+                <p class="modal-item" id="poke-description">Description: Bulbasaur</p>
+            </div>
+        </div>
+    </section>
+
+    <footer><button type="button" onclick="viewmore()">View more</button></footer>
+
+    <script src="/Pokedex/script.js"></script>
+
+</body>
+
+</html>

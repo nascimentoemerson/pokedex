@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(90deg, #4743d0, #880868);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+input,button{
+    background-color:  #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 15px 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.poke-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.caixa-poke{
+    width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transform: scale(0.90);
+    transition: all .3s ease-in-out;
+}
+
+.caixa-poke:hover{
+    transform: scale(1.1);
+}
+.caixa-poke img{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.caixa-poke h4{
+    font-size: 1.8rem;
+    margin: 5px auto;
+}
+
+.caixa-poke p{
+    margin: 5px auto;
+    font-size: 1.3rem;
+
+}
+
+#modal-overlay{
+    background-color: #00000090;
+    width:  100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#modal{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    background-color: #DEFDE0;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#modal span#close-modal{
+    position: absolute;
+    color: black;
+    top: 0%;
+    right: 0;
+    background-color: #a8a8a8;
+    padding: .5rem;
+    border-radius: 0 11px;
+    cursor: pointer;
+    transition: all .3as ease-in-out;
+}
+
+#modal span#close-modal:hover{
+    background-color: #797979;
+}
+
+#modal img{
+    object-fit: cover;
+    object-position: center;
+    width: 50%;
+    height: auto;
+}
+
+#modal h4{
+    color: black;
+    padding: 5px 0;
+    font-size: 1.8rem;
+}
+
+#modal p{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#poke-name::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+
